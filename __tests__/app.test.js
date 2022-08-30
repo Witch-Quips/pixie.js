@@ -8,7 +8,7 @@ const mockUser = {
   email: 'greatoak@legendofzelda.com',
   password: 'password',
   username: 'greatoak',
-}
+};
 
 
 describe('backend-express-template routes', () => {
@@ -21,8 +21,8 @@ describe('backend-express-template routes', () => {
 
   it('creates and signs in a new user', async () => {
     const res = await request(app)
-    .post('/api/v1/users/')
-    .send(mockUser);
+      .post('/api/v1/users/')
+      .send(mockUser);
     expect(res.status).toEqual(200);
     const { email, username } = mockUser;
     expect(res.body).toEqual({
