@@ -46,8 +46,19 @@ describe('cards backend-express-template routes', () => {
           card_id: expect.any(String),
         }
     });
-
+    
   });
+    
+  it.only('#GET shows solo card for a user', async () => {
+    const [agent, user] = await registerAndLogin();
+      
+    const res = await agent.get('/api/v1/users/1');
+    expect(res.body).toEqual({ id: '1', user_id: user.id, card_id: '77' });
+      
+  });
+
+
+
 });
 afterAll(() => {
   pool.end();
