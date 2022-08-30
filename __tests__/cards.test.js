@@ -7,12 +7,14 @@ describe('cards backend-express-template routes', () => {
   beforeEach(() => {
     return setup(pool);
   });
+
+  it(' #GET all should return a list cards', async () => {
+    const res = await request(app).get('/api/v1/cards');
+    console.log('hey res', res.body);
+    expect(res.status).toBe(200);
+  });
+
   afterAll(() => {
     pool.end();
   });
-});
-
-it(' #GET all should return a list cards', async () => {
-  const res = await request(app).get('/api/v1/cards');
-  expect(res.status).toBe(200);
 });

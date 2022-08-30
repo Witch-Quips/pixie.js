@@ -38,3 +38,7 @@ it('signs in existing user, and redirects to list of users', async () => {
     .send({ email: 'greatoak@legendofzelda.com', password: 'password' });
   expect(res.status).toBe(200);
 });
+
+afterAll(() => {
+  pool.end();
+});
