@@ -1,5 +1,5 @@
-DROP TABLE if exists users;
-DROP TABLE if exists cards;
+DROP TABLE if exists users CASCADE;
+DROP TABLE if exists cards CASCADE;
 
 CREATE TABLE users (
     id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
