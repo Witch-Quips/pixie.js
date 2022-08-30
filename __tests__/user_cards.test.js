@@ -33,12 +33,13 @@ describe('cards backend-express-template routes', () => {
     };
 
     const res = await agent
-      .post('/api/v1/users/4/cards')
+      .post(`/api/v1/users/${user.id}/cards`)
       .send(newRow);
-    expect(res.status).toBe(200);
+    expect(res.status).toEqual(200);
+    console.log('hey res', res.body);
     expect(res.body).toEqual({
       message: 'User card created',
-      user_card:
+      userCard:
         {
           id: expect.any(String),
           user_id: expect.any(String),

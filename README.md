@@ -1,17 +1,28 @@
-# Template for Backend Express
+# WITCH QUIPS
 
-The Golden Rule:
-🦸 🦸‍♂️ Stop starting and start finishing. 🏁
+## OUR TEAM
 
-If you work on more than one feature at a time, you are guaranteed to multiply your bugs and your anxiety.
+### Amaya
 
-## Scripts
+### Amanda
 
-| command                | description                                                                         |
-| ---------------------- | ----------------------------------------------------------------------------------- |
-| `npm start`            | starts the app - should only be used in production as changes will not get reloaded |
-| `npm run start:watch`  | runs the app using `nodemon` which watches for changes and reloads the app          |
-| `npm test`             | runs the tests once                                                                 |
-| `npm run test:watch`   | continually watches and runs the tests when files are updated                       |
-| `npm run setup-db`     | sets up the database locally                                                        |
-| `npm run setup-heroku` | sets up the database on heroku                                                      |
+### Niki
+
+### David
+
+## Links and Resources
+
+### Miro Board
+<https://miro.com/app/board/uXjVPcaiFug=/>
+
+### GitHub repo
+<https://github.com/Witch-Quips/build>
+
+### Node.js CLI blogs and references
+<https://developer.okta.com/blog/2019/06/18/command-line-app-with-nodejs>
+
+<https://www.twilio.com/blog/how-to-build-a-cli-with-node-js>
+
+<https://cheatcode.co/tutorials/how-to-build-a-command-line-interface-cli-using-node-js>
+
+<https://blog.logrocket.com/creating-a-cli-tool-with-node-js/>
