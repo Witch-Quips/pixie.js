@@ -3,21 +3,16 @@ const setup = require('../data/setup');
 const request = require('supertest');
 const app = require('../lib/app');
 
-
 const mockUser = {
   email: 'greatoak@legendofzelda.com',
   password: 'password',
   username: 'greatoak',
 };
 
-
 describe('backend-express-template routes', () => {
-
-
   beforeEach(() => {
     return setup(pool);
   });
-
 
   it('creates and signs in a new user', async () => {
     const res = await request(app)
@@ -34,8 +29,11 @@ describe('backend-express-template routes', () => {
       },
     });
   });
-
-
+  it('signs in existing user, and redirects to list of tarot cards', async () => {
+    await request(app).post('/api/v1/users').send(mockUser);
+    const res = await request(app).post('/api/v1/users/sessions').send({ email: 'greatoak@legendofzelda.com', password: 'password' });
+    expect(res.status).toBe(200);
+  });
 
   afterAll(() => {
     pool.end();
