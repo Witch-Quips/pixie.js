@@ -27,7 +27,16 @@ describe('cards backend-express-template routes', () => {
     });
   });
 
-  afterAll(() => {
-    pool.end();
+  it('#UPDATE should update a card', async () => {
+    const res = await request(app)
+      .put('/api/v1/cards/1')
+      .send({ name: 'updated card' });
+    expect(res.body.name).toBe('updated card');
+    expect(res.status).toBe(200);
   });
+
 });
+afterAll(() => {
+  pool.end();
+});
+
