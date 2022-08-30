@@ -7,6 +7,7 @@ CREATE TABLE users (
     password_hash TEXT NOT NULL,
     username TEXT NOT NULL
 );
+
 INSERT into users (username, email, password_hash) values
 ('Amanda', 'amanda@hecht.com', 'crowley'),
 ('Amaya', 'amaya@maya.com','trout'),
