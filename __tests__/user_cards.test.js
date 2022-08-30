@@ -36,7 +36,7 @@ describe('cards backend-express-template routes', () => {
       .post(`/api/v1/users/${user.id}/cards`)
       .send(newRow);
     expect(res.status).toEqual(200);
-    console.log('hey res', res.body);
+    // console.log('hey res', res.body);
     expect(res.body).toEqual({
       message: 'User card created',
       userCard:
