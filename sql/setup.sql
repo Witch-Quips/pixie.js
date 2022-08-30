@@ -1,5 +1,6 @@
 DROP TABLE if exists users CASCADE;
 DROP TABLE if exists cards CASCADE;
+DROP TABLE if exists user_cards CASCADE;
 
 CREATE TABLE users (
     id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -22,6 +23,7 @@ CREATE TABLE cards (
     suit_id TEXT NOT NULL,
     image TEXT NOT NULL
 );
+
 INSERT into cards (name, position_id, arcana, suit_id, image) values
 ('the fool', '0', 'major', 'major','m00.jpg'),
 ('the magician', '1', 'major', 'major','m01.jpg'),
@@ -104,4 +106,20 @@ INSERT into cards (name, position_id, arcana, suit_id, image) values
 ('page of pentacles', '74', 'minor', 'pentacles','w11.jpg'),
 ('knight of pentacles', '75', 'minor', 'pentacles','w12.jpg'),
 ('queen of pentacles', '76', 'minor', 'pentacles','w13.jpg'),
-('king of pentacles', '77', 'minor', 'pentacles','w14.jpg')
+('king of pentacles', '77', 'minor', 'pentacles','w14.jpg');
+
+CREATE TABLE user_cards (
+    id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    user_id BIGINT NOT NULL REFERENCES users(id),
+    card_id BIGINT NOT NULL REFERENCES cards(id)
+);
+
+INSERT INTO user_cards (user_id, card_id) VALUES 
+(1,1),
+(2,3),
+(3,5),
+(4,6),
+(1,4),
+(2,7),
+(3,1),
+(4,23)
