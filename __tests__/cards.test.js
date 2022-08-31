@@ -37,7 +37,6 @@ describe('cards backend-express-template routes', () => {
 
   it(' #GET all suits should return a list of suits', async () => {
     const res = await request(app).get('/api/v1/cards/suits/major');
-    console.log('hello', res.body);
     expect(res.body).toHaveLength(22);
     expect(res.body[0]).toEqual(
       {
@@ -46,6 +45,20 @@ describe('cards backend-express-template routes', () => {
         position_id: expect.any(String),
         arcana: expect.any(String),
         suit_id: 'major',
+        image: expect.any(String),
+      }
+    );
+  });
+
+  it(' #GET all positions should return a list of card positions', async () => {
+    const res = await request(app).get('/api/v1/cards/positions/3');
+    expect(res.body[0]).toEqual(
+      {
+        id: expect.any(String),
+        name: expect.any(String),
+        position_id: 3,
+        arcana: expect.any(String),
+        suit_id: expect.any(String),
         image: expect.any(String),
       }
     );
