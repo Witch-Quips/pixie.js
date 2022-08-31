@@ -56,7 +56,7 @@ describe('cards backend-express-template routes', () => {
       {
         id: expect.any(String),
         name: expect.any(String),
-        position_id: 3,
+        position_id: '3',
         arcana: expect.any(String),
         suit_id: expect.any(String),
         image: expect.any(String),
