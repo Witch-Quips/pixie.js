@@ -128,7 +128,7 @@ INSERT INTO user_cards (user_id, card_id) VALUES
 
 CREATE TABLE meanings(
     id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-    card_id INT NOT NULL REFERENCES cards(id),
+    card_id INT NOT NULL,
     name VARCHAR NOT NULL,
     number INTEGER  NOT NULL,
     keyword_0 VARCHAR NOT NULL,
@@ -136,7 +136,8 @@ CREATE TABLE meanings(
     keyword_2 VARCHAR NOT NULL,
     meaning_0 VARCHAR NOT NULL,
     meaning_1 VARCHAR NOT NULL,
-    meaning_2 VARCHAR NOT NULL
+    meaning_2 VARCHAR NOT NULL,
+    FOREIGN KEY (card_id) REFERENCES cards(id)
 );
 
 INSERT INTO meanings (card_id,name,number,keyword_0,keyword_1,keyword_2,meaning_0,meaning_1,meaning_2) VALUES
