@@ -8,7 +8,7 @@ describe('cards backend-express-template routes', () => {
     return setup(pool);
   });
 
-  it(' #GET all should return a list cards', async () => {
+  it(' #GET all should return a list of cards', async () => {
     const res = await request(app).get('/api/v1/cards');
     // console.log('hey res', res.body);
     expect(res.status).toBe(200);
@@ -35,7 +35,11 @@ describe('cards backend-express-template routes', () => {
     expect(res.status).toBe(200);
   });
 
-  
+  it(' #GET all suits should return a list of suits', async () => {
+    const res = await request(app).get('/api/v1/cards/suits');
+    expect(res.status).toBe(200);
+  });
+
 });
 afterAll(() => {
   pool.end();
