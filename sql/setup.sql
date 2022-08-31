@@ -2,6 +2,8 @@ DROP TABLE if exists users CASCADE;
 DROP TABLE if exists cards CASCADE;
 DROP TABLE if exists user_cards CASCADE;
 DROP TABLE if exists meanings CASCADE;
+DROP TABLE if exists authors CASCADE;
+DROP TABLE if exists pamela CASCADE;
 
 CREATE TABLE users (
     id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -217,4 +219,31 @@ INSERT INTO meanings (card_id,name,number,keyword_0,keyword_1,keyword_2,meaning_
 (75,'Page of Pentacles',11,'practicality','prosperity','learning','Learning the value of a dollar','Starting a savings plan','Taking the first steps toward getting out of debt'),
 (76,'Knight of Pentacles',12,'caution','focus','realism','Spending money wisely','Saving for a rainy day','Paying close attention to physical or financial details'),
 (77,'Queen of Pentacles',13,'luxury','comfort','resourcefulness','Appreciating fine food, fine wine, beautiful art, beautiful bodies, or any of the better things in life','Reveling in healthy sexuality','Treating yourself'),
-(78,'King of Pentacles',14,'stability','dependability','confidence','Becoming debt-free','Having more than enough to get by','Making contributions to a savings plan')
+(78,'King of Pentacles',14,'stability','dependability','confidence','Becoming debt-free','Having more than enough to get by','Making contributions to a savings plan');
+
+CREATE TABLE authors (
+    id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    name VARCHAR NOT NULL,
+    github VARCHAR,
+    linkedin VARCHAR,
+    photo VARCHAR,
+    tarot_card VARCHAR
+);
+
+INSERT INTO authors (name, github, linkedin, photo, tarot_card) VALUES 
+('Amanda Hecht','a','a','a','a'),
+('Amaya Alejandra','b','b','b','b'),
+('David Fransico','c','c','c','c'),
+('Niki Hite','d','d','d','d');
+
+
+CREATE TABLE pamela (
+    id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    name VARCHAR NOT NULL,
+    life_span VARCHAR,
+    photo VARCHAR,
+    bio VARCHAR
+);
+
+INSERT INTO pamela (name, life_span, photo, bio) VALUES 
+('pamela','1900-1900', 'a', 'a' )
