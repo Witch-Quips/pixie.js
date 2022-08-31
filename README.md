@@ -1,5 +1,4 @@
-#WOO CODERS
-
+# WOO CODERS
 
 ## OUR TEAM
 
@@ -15,7 +14,6 @@
 
 ### Miro Board
 
-
 <https://miro.com/app/board/uXjVPcaiFug=/>
 
 ### GitHub repo
@@ -30,7 +28,6 @@
 
 <https://cheatcode.co/tutorials/how-to-build-a-command-line-interface-cli-using-node-js>
 
-
 <https://blog.logrocket.com/creating-a-cli-tool-with-node-js/>
 
 ## More Tarot Info
@@ -39,7 +36,7 @@
 
 <https://en.wikipedia.org/wiki/Rider-Waite_tarot_deck>
 
-### Learn about the artist, Pamela Colman Smith, the queer woman who created the art
+### Learn about the artist, Pamela Colman Smith, the woman who created the art
 
 ### for the iconic Rider-Waite-Smith tarot cards
 
