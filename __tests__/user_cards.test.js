@@ -45,9 +45,27 @@ describe('cards backend-express-template routes', () => {
           user_id: expect.any(String),
           card_id: expect.any(String),
         }
-    });
-
+    }); 
   });
+    
+  it('#GET shows all cards for a user', async () => {
+    const [agent] = await registerAndLogin();
+      
+    const res = await agent.get('/api/v1/users/1/cards');
+    expect(res.body).toEqual({       
+      id: '1',
+      name: 'the fool',
+      position_id: '0',
+      suit_id: 'major',
+      image: 'm00.jpg' });
+  });
+
+
+
+
+
+
+
 });
 afterAll(() => {
   pool.end();
