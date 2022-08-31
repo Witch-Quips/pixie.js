@@ -217,4 +217,4 @@ INSERT INTO meanings (card_id,name,number,keyword_0,keyword_1,keyword_2,meaning_
 (75,'Page of Pentacles',11,'practicality','prosperity','learning','Learning the value of a dollar','Starting a savings plan','Taking the first steps toward getting out of debt'),
 (76,'Knight of Pentacles',12,'caution','focus','realism','Spending money wisely','Saving for a rainy day','Paying close attention to physical or financial details'),
 (77,'Queen of Pentacles',13,'luxury','comfort','resourcefulness','Appreciating fine food, fine wine, beautiful art, beautiful bodies, or any of the better things in life','Reveling in healthy sexuality','Treating yourself'),
-(78,'King of Pentacles',14,'stability','dependability','confidence','Becoming debt-free','Having more than enough to get by','Making contributions to a savings plan');
+(78,'King of Pentacles',14,'stability','dependability','confidence','Becoming debt-free','Having more than enough to get by','Making contributions to a savings plan')
