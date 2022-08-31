@@ -45,17 +45,24 @@ describe('cards backend-express-template routes', () => {
           user_id: expect.any(String),
           card_id: expect.any(String),
         }
-    });
-    
+    }); 
   });
     
-  it.only('#GET shows solo card for a user', async () => {
-    const [agent, user] = await registerAndLogin();
+  it('#GET shows all cards for a user', async () => {
+    const [agent] = await registerAndLogin();
       
-    const res = await agent.get('/api/v1/users/1');
-    expect(res.body).toEqual({ id: '1', user_id: user.id, card_id: '77' });
-      
+    const res = await agent.get('/api/v1/users/1/cards');
+    expect(res.body).toEqual({       
+      id: '1',
+      name: 'the fool',
+      position_id: '0',
+      suit_id: 'major',
+      image: 'm00.jpg' });
   });
+
+
+
+
 
 
 
