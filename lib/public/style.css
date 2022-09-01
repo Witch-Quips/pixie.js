@@ -9,98 +9,122 @@ font-family: 'Rubik Moonrocks', cursive; */
 
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Montserrat+Alternates:wght@200;300;400&family=Rubik+Moonrocks&display=swap');
 
+body {
+
+  background-color: rgb(51, 51, 98);
+}
+
 .routes-table {
   border-collapse: separate;
   border-spacing: 0 15px;
   margin-left: auto;
   margin-right: auto;
   max-width: 40vw;
-  outline: 2px solid black;
+  outline: 3px dotted goldenrod;
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
+  border-bottom: 40px solid transparent;
+  border-image: url(./border.png) 40 round;
+
+
 }
 
-.card-1
-{
-outline: 2px solid rgb(197, 44, 197);
+.card-1 {
 padding: 5px;
 margin: 10px;
 }
 
 .card-2
 {
-  outline: 2px solid orange;
+  outline: 5px solid gold;
+  padding: 5px;
   padding: 5px;
   margin: 10px;
   display: flex;
   flex-direction: column;
-  background-color: antiquewhite;
+  background-color: rgba(189, 178, 163, 0.418);
 }
 
 .card-3
 {
-outline: 2px solid red;
+  outline: 5px solid gold;
+  padding: 5px;
 padding: 5px;
 margin: 10px;
 display: flex;
 flex-direction: column;
-background-color: antiquewhite;
+background-color: rgba(189, 178, 163, 0.418);
 }
 
 .card-4
 {
-outline: 2px solid blue;
+  outline: 5px solid gold;
+  padding: 5px;
 padding: 5px;
 margin: 10px;
 display: flex;
 flex-direction: column;
-background-color: antiquewhite;
+background-color: rgba(189, 178, 163, 0.418);
+margin-top: 10px;
 }
 
 .card-5
 {
-outline: 2px solid green;
+  outline: 5px solid gold;
+  padding: 5px;
 padding: 5px;
 margin: 10px;
 display: flex;
 flex-direction: column;
-background-color: antiquewhite;
+background-color: rgba(189, 178, 163, 0.418);
 }
 
 .card-6 {
-  outline: 2px solid pink;
+  outline: 5px solid gold;
   padding: 5px;
   margin: 10px;
   display: flex;
   flex-direction: column;
-  background-color: antiquewhite;
+  background-color: rgba(189, 178, 163, 0.418);
 }
 
 .suits-table {
   display: flex;
   flex-wrap: wrap;
-  outline: 2px solid fuchsia;
   justify-content: center;
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-image: url(./border.png) 40 round;
 }
 
 .meanings-table {
   display: flex;
   flex-wrap: wrap;
-  outline: 2px solid cyan;
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-image: url(./border.png) 40 round;
+
 }
 
 .cards-table {
   display: flex;
   flex-wrap: wrap;
-  outline: 2px solid darkblue;
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-image: url(./border.png) 40 round;
 }
 
 header {
   display: flex;
   justify-content: center;
+  border-top: 50px solid transparent;
+  border-bottom: 40px solid transparent;
+    border-image: url(./border.png) 40 round;
+    color: goldenrod;
+  
 }
 
 tr {
