@@ -72,3 +72,31 @@ flex-direction: column;
 background-color: antiquewhite;
 max-width: 35%;
 }
+
+.card-6 {
+  outline: 2px solid pink;
+  padding: 5px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: antiquewhite;
+  max-width: 35%;
+}
+
+.suits-table {
+  display: flex;
+  flex-wrap: wrap;
+  outline: 2px solid fuchsia;
+}
+
+.meanings-table {
+  display: flex;
+  flex-wrap: wrap;
+  outline: 2px solid fuchsia;
+}
+
+.cards-table {
+  display: flex;
+  flex-wrap: wrap;
+  outline: 2px solid darkblue;
+}
