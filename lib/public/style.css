@@ -118,13 +118,17 @@ background-color: rgba(189, 178, 163, 0.418);
 }
 
 header {
+
   display: flex;
   justify-content: center;
   border-top: 50px solid transparent;
   border-bottom: 40px solid transparent;
     border-image: url(./border.png) 40 round;
     color: goldenrod;
-  
+}
+
+.pixie {
+  height: 150px;
 }
 
 tr {
