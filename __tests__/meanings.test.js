@@ -13,8 +13,25 @@ describe('Meanings backend-express-template routes', () => {
   it('#GET should return a list of all card meanings', async () => {
     const res = await request(app).get('/api/v1/meanings');
     expect(res.status).toBe(200);
-    console.log('hey resibod', res.body[0]);
+    // console.log('hey resibod', res.body[0]);
     expect(res.body[0]).toEqual({
+      id: expect.any(String),
+      card_id: expect.any(Number),
+      name: expect.any(String),
+      number: expect.any(Number),
+      keyword_0: expect.any(String),
+      keyword_1: expect.any(String),
+      keyword_2: expect.any(String),
+      meaning_0: expect.any(String),
+      meaning_1: expect.any(String),
+      meaning_2: expect.any(String),
+    });
+  });
+  it('#GET one should return a single card meaning', async () => {
+    const res = await request(app).get('/api/v1/meanings/1');
+    expect(res.status).toBe(200);
+    // console.log(res.body);
+    expect(res.body).toEqual({
       id: expect.any(String),
       card_id: expect.any(Number),
       name: expect.any(String),
