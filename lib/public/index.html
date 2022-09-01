@@ -4,18 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/styles.css" rel="stylesheet" />
+    <link href="/style.css" rel="stylesheet" />
     <title>Tarot Cards</title>
   </head>
   <body>
     <header class="bg-gray-700 text-white p-4">
-      <h1 class="text-lg font-semibold">Tarot Cards</h1>
+      <h1 id="h1-tarot">Tarot Cards</h1>
     </header>
     <main class="p-4 w-1/2 m-auto">
-      <table class="table border-2 mt-4">
+      <table class="routes-table">
 
 
-        <thead class="table-header-group border-2">
+        <thead class="table-header">
           <tr>
             <th class="table-cell p-3">Route</th>
             <th class="table-cell p-3">CRUD Method</th>
@@ -25,20 +25,85 @@
         </thead>
 
 
-        <tbody class="table-row-group">
-          <tr class="border-2">
+        <tbody class="cards-table">
+          <tr class="card-2">
             <td class="table-cell p-3"><pre>/cards/:id</pre></td>
             <td class="table-cell p-3 text-center">GET</td>
             <td class="table-cell p-3">
               Returns 1 tarot card
             </td>
             <td class="table-cell p-3">
-              <a href="/cards/1" target="_blank" class="text-blue-700"
-                >Get 1 Tarot Card</a
-              >
+              <a href="/api/v1/cards/1" target="_blank" class="text-blue-700"
+                >Get 1 Tarot Card</a>
+            </td>
+          </tr>
+          <tr class="card-2">
+            <td class="table-cell p-3"><pre>/cards</pre></td>
+            <td class="table-cell p-3 text-center">GET</td>
+            <td class="table-cell p-3">
+              Return all tarot cards
+            </td>
+            <td class="table-cell p-3">
+              <a href="/api/v1/cards" target="_blank" class="text-blue-700"
+                >Gets All Tarot Cards</a>
             </td>
           </tr>
         </tbody>
+        
+        <tbody class="meanings-table">
+          <tr class="card-3">
+            <td class="table-cell p-3"><pre>/meanings/:id</pre></td>
+            <td class="table-cell p-3 text-center">GET</td>
+            <td class="table-cell p-3">
+              Return one meaning
+            </td>
+            <td class="table-cell p-3">
+              <a href="/api/v1/meanings/1" target="_blank" class="text-blue-700"
+                >Get a card meaning</a>
+            </td>
+          </tr>
+          
+          <tr class="card-3">
+            <td class="table-cell p-3"><pre>/meanings</pre></td>
+            <td class="table-cell p-3 text-center">GET</td>
+            <td class="table-cell p-3">
+              Return all card meanings
+            </td>
+            <td class="table-cell p-3">
+              <a href="/api/v1/meanings" target="_blank" class="text-blue-700">
+              Gets All Card Meanings</a>
+            </td>
+          </tr>
+        </tbody>
+
+        <tbody class="pamela-table">
+          <tr class="card-4">
+            <td class="table-cell p-3"><pre>/pamelas</pre></td>
+            <td class="table-cell p-3 text-center">GET</td>
+            <td class="table-cell p-3">
+              Pamela Colson Smith Facts
+            </td>
+            <td class="table-cell p-3">
+              <a href="/api/v1/pamelas" target="_blank" class="text-blue-700">
+                Get Bio</a>
+            </td>
+          </tr>
+        </tbody>
+
+        <tbody class="authors-table">
+          <tr class="card-5">
+            <td class="table-cell p-3"><pre>/authors</pre></td>
+            <td class="table-cell p-3 text-center">GET</td>
+            <td class="table-cell p-3">
+              Returns all authors
+            </td>
+            <td class="table-cell p-3">
+              <a href="/api/v1/authors" target="_blank" class="text-blue-700">
+                Get all authors</a>
+            </td>
+          </tr>
+        </tbody>
+
       </table>
     </main>
   </body>

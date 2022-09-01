@@ -1,5 +1,4 @@
-#WOO CODERS
-
+# WOO CODERS
 
 ## OUR TEAM
 
@@ -15,8 +14,7 @@
 
 ### Miro Board
 
-
-<https://miro.com/app/board/uXjVPcaiFug=/>
+<https://miro.com/app/board/uXjVPcaiaFug=/>
 
 ### GitHub repo
 
@@ -29,7 +27,6 @@
 <https://www.twilio.com/blog/how-to-build-a-cli-with-node-js>
 
 <https://cheatcode.co/tutorials/how-to-build-a-command-line-interface-cli-using-node-js>
-
 
 <https://blog.logrocket.com/creating-a-cli-tool-with-node-js/>
 

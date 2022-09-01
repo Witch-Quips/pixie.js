@@ -232,10 +232,10 @@ CREATE TABLE authors (
 );
 
 INSERT INTO authors (name, github, linkedin, photo, tarot_card) VALUES 
-('Amanda Hecht','https://github.com/amanda-hecht89','https://www.linkedin.com/in/amanda-hecht/','a','a'),
+('Amanda Hecht','https://github.com/amanda-hecht89','https://www.linkedin.com/in/amanda-hecht/','a','The Sun'),
 ('Amaya Alejandra','https://github.com/amayamaya','https://www.linkedin.com/in/amayamaya/','b','b'),
-('David Fransico','https://github.com/dfrancisco26','https://www.linkedin.com/in/davidn0tdave/','c','c'),
-('Niki Hite','https://github.com/nikihite','https://www.linkedin.com/in/nikihite/','d','d');
+('David Francisco','https://github.com/dfrancisco26','https://www.linkedin.com/in/davidn0tdave/','c','The Hermit'),
+('Niki Hite','https://github.com/nikihite','https://www.linkedin.com/in/nikihite/','d','The Star');
 
 
 CREATE TABLE pamela (
