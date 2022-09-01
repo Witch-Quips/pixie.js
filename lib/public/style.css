@@ -3,18 +3,9 @@
   flex-direction: column;
 } */
 
-/* font-family: 'Aboreto', cursive;
-font-family: 'Montserrat Alternates', sans-serif;
-font-family: 'Rubik Moonrocks', cursive;
-*/
-
 .h1-tarot {
   margin-left: auto;
   margin-right: auto;
-}
-
-tbody {
-  font-family: 'Montserrat Alternates', sans-serif;
 }
 
 .routes-table {
@@ -28,6 +19,7 @@ tbody {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+
 }
 
 .card-1
@@ -46,7 +38,6 @@ display: flex;
 flex-direction: column;
 max-width: fit-content;
 background-color: antiquewhite;
-
 }
 
 .card-3
