@@ -3,10 +3,11 @@
   flex-direction: column;
 } */
 
-.h1-tarot {
-  margin-left: auto;
-  margin-right: auto;
-}
+/* font-family: 'Aboreto', cursive;
+font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Rubik Moonrocks', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Montserrat+Alternates:wght@200;300;400&family=Rubik+Moonrocks&display=swap');
 
 .routes-table {
   border-collapse: separate;
@@ -19,7 +20,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-
+  justify-content: center;
 }
 
 .card-1
@@ -31,13 +32,12 @@ margin: 10px;
 
 .card-2
 {
-outline: 2px solid black;
-padding: 5px;
-margin: 10px;
-display: flex;
-flex-direction: column;
-max-width: fit-content;
-background-color: antiquewhite;
+  outline: 2px solid orange;
+  padding: 5px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: antiquewhite;
 }
 
 .card-3
@@ -48,7 +48,6 @@ margin: 10px;
 display: flex;
 flex-direction: column;
 background-color: antiquewhite;
-max-width: 35%;
 }
 
 .card-4
@@ -59,7 +58,6 @@ margin: 10px;
 display: flex;
 flex-direction: column;
 background-color: antiquewhite;
-max-width: 35%;
 }
 
 .card-5
@@ -70,7 +68,6 @@ margin: 10px;
 display: flex;
 flex-direction: column;
 background-color: antiquewhite;
-max-width: 35%;
 }
 
 .card-6 {
@@ -80,23 +77,42 @@ max-width: 35%;
   display: flex;
   flex-direction: column;
   background-color: antiquewhite;
-  max-width: 35%;
 }
 
 .suits-table {
   display: flex;
   flex-wrap: wrap;
   outline: 2px solid fuchsia;
+  justify-content: center;
 }
 
 .meanings-table {
   display: flex;
   flex-wrap: wrap;
-  outline: 2px solid fuchsia;
+  outline: 2px solid cyan;
 }
 
 .cards-table {
   display: flex;
   flex-wrap: wrap;
   outline: 2px solid darkblue;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+tr {
+  width: 15vw;
+  height: 20vh;
+  display: flex;
+  text-align: center;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 200;
+}
+
+a {
+  font-weight: 400;
+  color: goldenrod;
 }
