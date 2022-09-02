@@ -144,3 +144,26 @@ a {
   font-weight: 400;
   color: goldenrod;
 }
+
+h2 {
+  display: flex;
+  font-family: 'Aboreto', cursive;
+  color: goldenrod;
+  justify-content: center;
+
+}
+
+#pixie-div {
+  display: flex;
+  justify-content: center;
+}
+
+.pamela-img {
+  height: 400px;
+}
+
+footer {
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: goldenrod;
+  font-size: 24px;
+}
